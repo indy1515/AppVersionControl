@@ -1,1 +1,1 @@
-include ':app', ':appversioncontroller'
+include ':app', ':app-version-controller'

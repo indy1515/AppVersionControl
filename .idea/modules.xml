@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AppVersionController.iml" filepath="$PROJECT_DIR$/AppVersionController.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/appversioncontroller/appversioncontroller.iml" filepath="$PROJECT_DIR$/appversioncontroller/appversioncontroller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-version-controller/app-version-controller.iml" filepath="$PROJECT_DIR$/app-version-controller/app-version-controller.iml" />
     </modules>
   </component>
 </project>
