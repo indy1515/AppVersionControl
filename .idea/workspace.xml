@@ -34,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/indyzalab/appversioncontrollersample/Network/NetworkConstant.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+              <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -90,8 +90,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/indyzalab/appversioncontrollersample/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6871658">
-              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.56684494">
+              <caret line="41" column="80" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2590,7 +2590,6 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/app.iml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/indyzalab/appversioncontrollersample/Network/NetworkConstant.java" />
         <option value="$PROJECT_DIR$/appversioncontroller/src/main/java/com/indyzalab/appversioncontroller/version/AppVersionControllerApplication.java" />
         <option value="$PROJECT_DIR$/appversioncontroller/src/main/java/com/indyzalab/appversioncontroller/version/log/Log.java" />
         <option value="$PROJECT_DIR$/appversioncontroller/src/main/java/com/indyzalab/appversioncontroller/version/log/CLog.java" />
@@ -2599,6 +2598,7 @@
         <option value="$PROJECT_DIR$/appversioncontroller/src/main/java/com/indyzalab/appversioncontroller/version/AppVersionApplication.java" />
         <option value="$PROJECT_DIR$/appversioncontroller/src/main/java/com/indyzalab/appversioncontroller/version/AppVersionController.java" />
         <option value="$PROJECT_DIR$/app/example.json" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/indyzalab/appversioncontrollersample/Network/NetworkConstant.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/indyzalab/appversioncontrollersample/MainActivity.java" />
       </list>
     </option>
@@ -3620,14 +3620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/indyzalab/appversioncontrollersample/Network/NetworkConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appversioncontroller/src/main/java/com/indyzalab/appversioncontroller/version/object/AppVersion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3701,10 +3693,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/indyzalab/appversioncontrollersample/Network/NetworkConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/indyzalab/appversioncontrollersample/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6871658">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.56684494">
+          <caret line="41" column="80" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

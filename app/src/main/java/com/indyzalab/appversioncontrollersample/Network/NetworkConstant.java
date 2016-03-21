@@ -5,5 +5,5 @@ package com.indyzalab.appversioncontrollersample.Network;
  * Copyright by IndyZaLab
  */
 public class NetworkConstant {
-    public static String API_URL = "https://api2.indyza.com/";
+    public static String API_URL = "https://raw.githubusercontent.com";
 }
