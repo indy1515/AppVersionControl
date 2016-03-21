@@ -3,7 +3,7 @@ Application Version Control (Update) Android's Library for Custom Server based A
 
 ## Installation
 
-    To be upload to jcenter
+    compile 'com.indyzalab.library:app-version-controller:1.0.5'
 
 ## Implementation
 
