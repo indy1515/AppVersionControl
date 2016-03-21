@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 ((AppVersionApplication)getApplication(),this, NetworkConstant.API_URL,pathUrl
                         ,"1.0.0","com.package.example");
         appVersionController.start();
-        CLog.setAllowLog(false);
+        CLog.setAllowLog(true);
 
     }
 
