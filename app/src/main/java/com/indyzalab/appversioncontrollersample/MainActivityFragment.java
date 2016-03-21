@@ -1,4 +1,4 @@
-package com.indyzalab.appversioncontroller;
+package com.indyzalab.appversioncontrollersample;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
