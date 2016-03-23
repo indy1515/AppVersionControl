@@ -8,7 +8,7 @@ android {
         minSdkVersion 10
         targetSdkVersion 23
         versionCode 1
-        versionName "1.0.5"
+        versionName "1.0.6"
     }
     buildTypes {
         release {
@@ -42,7 +42,7 @@ ext {
     siteUrl = 'https://github.com/indy1515/AppVersionController'
     gitUrl = 'https://github.com/indy1515/AppVersionController.git'
 
-    libraryVersion = '1.0.5'
+    libraryVersion = '1.0.6'
 
     developerId = 'indy1515'
     developerName = 'Intouch Marsvongpragorn'

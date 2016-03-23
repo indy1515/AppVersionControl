@@ -39,10 +39,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onResumeFragments() {
         super.onResumeFragments();
         // App Version Controller
+        String packageName = "com.example.package";
+        String version = "1.0.0";
         String pathUrl = "/indy1515/AppVersionController/master/app/example.json";
         appVersionController = new AppVersionController
                 ((AppVersionApplication)getApplication(),this, NetworkConstant.API_URL,pathUrl
-                        ,"1.0.0","com.package.example");
+                        ,version,packageName);
         appVersionController.start();
         CLog.setAllowLog(true);
 

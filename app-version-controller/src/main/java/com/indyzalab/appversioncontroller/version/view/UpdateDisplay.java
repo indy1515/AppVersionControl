@@ -19,7 +19,13 @@ public class UpdateDisplay {
 
 
     static MaterialDialog  materialDialog;
-    public static void showUpdateAvailableDialog(final Context context, final AppVersion appVersion) {
+
+    public static void showUpdateAvailableDialog(final Context context,final AppVersion appVersion){
+        showUpdateAvailableDialog(context, appVersion,false);
+    }
+
+
+    public static void showUpdateAvailableDialog(final Context context, final AppVersion appVersion, final boolean disableShowWhenEngage) {
         final VersionPreference versionPreference = new VersionPreference(context);
 
         MaterialDialog.Builder materialDialogBuilder = new MaterialDialog.Builder(context)
@@ -29,6 +35,9 @@ public class UpdateDisplay {
                 .onPositive(new MaterialDialog.SingleButtonCallback() {
                     @Override
                     public void onClick(MaterialDialog dialog, DialogAction which) {
+                        if(disableShowWhenEngage){
+                            versionPreference.setAppUpdaterShow(false);
+                        }
                         if (appVersion.isEnableLink()) {
                             try {
                                 context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(appVersion.getLinkUrl())));
@@ -44,13 +53,15 @@ public class UpdateDisplay {
                                 context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
                             }
                         }
+
                     }
                 });
-
+        materialDialogBuilder.canceledOnTouchOutside(false);
         if(appVersion.isForcedUpdate()){
             materialDialogBuilder.cancelListener(new DialogInterface.OnCancelListener() {
                 @Override
                 public void onCancel(DialogInterface dialog) {
+
                     Intent intent = new Intent(Intent.ACTION_MAIN);
                     intent.addCategory(Intent.CATEGORY_HOME);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -73,6 +84,23 @@ public class UpdateDisplay {
                         });
             }
         }
+
+        materialDialogBuilder.dismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialog) {
+                if (disableShowWhenEngage) {
+                    versionPreference.setAppUpdaterShow(false);
+                }
+            }
+        });
+        materialDialogBuilder.onNegative(new MaterialDialog.SingleButtonCallback() {
+            @Override
+            public void onClick(MaterialDialog dialog, DialogAction which) {
+
+            }
+        });
+
+
         if(materialDialog == null) {
             materialDialog = materialDialogBuilder.show();
         }else{

@@ -122,8 +122,8 @@ public class AppVersionController {
         }else if(appVersion.isRecommendedUpdate()){
             if(!appVersion.isCanRepeatAlert()){
                 if(versionPreference.getAppUpdaterShow()) {
-                    UpdateDisplay.showUpdateAvailableDialog(mContext, appVersion);
-                    versionPreference.setAppUpdaterShow(false);
+                    UpdateDisplay.showUpdateAvailableDialog(mContext, appVersion,true);
+//                    versionPreference.setAppUpdaterShow(false);
                 }
             }else{
                 //now say you want to do something every 10th time they open the app:
@@ -221,6 +221,8 @@ public class AppVersionController {
                     //No new version
 
                     //Reset Count to 0
+                    versionPreference.setAppVersion(null);
+                    return;
                 } else {
                     // Sort ASCEND (1.0.0, 1.0.1,1.0.3)
                     Collections.sort(appVersion, new AppVersionComparator());
