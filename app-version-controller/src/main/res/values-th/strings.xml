@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">AppVersionController</string>
-
 
     <!-- Dialog String -->
     <string name="update">อัพเดท</string>
