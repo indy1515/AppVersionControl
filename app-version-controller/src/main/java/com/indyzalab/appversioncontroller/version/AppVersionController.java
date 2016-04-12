@@ -3,7 +3,6 @@ package com.indyzalab.appversioncontroller.version;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.util.Log;
 
 import com.indyzalab.appversioncontroller.version.comparator.AppVersionComparator;
 import com.indyzalab.appversioncontroller.version.log.CLog;
@@ -212,9 +211,9 @@ public class AppVersionController {
         @Override
         public void onResponse(Call<List<AppVersion>> call, Response<List<AppVersion>> response) {
             List<AppVersion> appVersion = null;
-            Log.d(this.getClass().getSimpleName(),"On Success Network: "+call.request().url());
+            CLog.d("On Success Network: "+call.request().url());
             if (response.body() != null) {
-                Log.d(this.getClass().getSimpleName(),"Network: " + response.body().toString());
+                CLog.d("Network: " + response.body().toString());
                 // Load Version
                 appVersion = response.body();
                 if (appVersion.isEmpty()) {

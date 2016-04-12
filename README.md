@@ -3,7 +3,7 @@ Application Version Control (Update) Android's Library for Custom Server based A
 
 ## Installation
 
-    compile 'com.indyzalab.library:app-version-controller:1.0.7'
+    compile 'com.indyzalab.library:app-version-controller:1.0.8'
 
 ## Implementation
 
